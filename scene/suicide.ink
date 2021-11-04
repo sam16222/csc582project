@@ -4,13 +4,13 @@ On your way back from work, you notice a new gift shop.
 You hope after the date that things will get back to normal soon.
 "I should probably get them something to cheer them up" you think to yourself.
 
-* [BUY A BOUQUET OF FLOWERS] 
++ [BUY A BOUQUET OF FLOWERS] 
     You get them a beautiful bouquet of flowers
     -> suicide_main
-* [BUY A FRANK SINATRA RECORD] 
++ [BUY A FRANK SINATRA RECORD] 
     You get them a vinyl record of "The Way You Look Tonight", which is their favorite song of all time
     -> suicide_main
-* [BUY A PURSE]
++ [BUY A PURSE]
     You get them a vintage magenta purse.
     -> suicide_main
 
@@ -75,10 +75,39 @@ You call out their name trying to figure out if they're still here.
                         Your heart feels like it's going to burst out from your chest.
                         
                         *****"This can't be happening" 
-                            -> temp_end
+                            -> body_down
                         *****"No no no no no"
-                            -> temp_end
+                            -> body_down
                         
-===temp_end===
+===body_down===
 You immedietly leap to try and bring your partner's body down.
+* [ADVANCE TIME] -> advance_time
+
+===advance_time===
+It's been a week since your partner's funeral. You haven't left your house or spoken to anyone since the funeral. You are lying in your bed, with hunger pangs slowly torturing you.
+    * [EAT SOMETHING]
+        Everything in the fridge has gone bad. It's 2 AM, there is no way to get any groceries. You take the car out to get some take-out from your partener's favorite place. 
+        On the way you cross the Manhattan bridge. You stop by to look at the water. That was your favorite spot. to visit. It has lost all it's charm though. The beautiful sound of the water have been replaced by an emptiness. 
+        **[CLIMB UP THE RAILING] 
+            The water seems inviting. You contemplate the reason for your existence. You think of jumping into the water. You see a vortex forming into the water. 
+                *** [THAT'S A SIGN] -> jump
+                *** [I MUST BE HALLUCINATING] -> jump
+                
+===jump===
+You don't want to live anymore. You jump into the water. The vortex pulls you in, with lights flickering all around you. You give into the water.
+.
+.
+.
+.
+.
+You wake up in your bed. There's a note next to you.
+"Hey sleepy. I have to get to work early today. I'll see you at dinner. xoxo"
+
+You check the calender. It's 4 days before your anniversary. You think you might be dreaming. You pinch yourself, slap your self, trying every possible way to wake yourself up. Nothing is changing.
+"Maybe I've been sent back in time", you think to yourself.
+"I can fix this now."
+
+You think about your anniversary date. "Maybe something happened then. Maybe I can change something."
+-> intro
+
 ->END
