@@ -1,5 +1,7 @@
 INCLUDE scene/suicide.ink
 INCLUDE scene/dinner.ink
+INCLUDE util/functions.ink
+
 
 
 
@@ -24,4 +26,4 @@ VAR evidence_found = false
 
 ===enter_scene===
 THIS SCENE IS THE DATE DESCRIPTION. THE SUBSEQUENT TIMES YOU GET HERE, YOU WILL HAVE TO CHOOSE YOUR BEHAVIOUR WHICH WILL HAVE AN EFFECT ON THE OUTCOME, AND THE MUSIC WILL CHANGE BASED ON YOUR CHOICES.
-->suicide_beginning
++ [GO TO SUICIDE]->suicide_beginning
