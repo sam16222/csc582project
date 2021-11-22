@@ -97,18 +97,19 @@ You don't want to live anymore. You jump into the water.
 As you're falling, you come to accept the fate you've chosen for yourself.
 Suddenly, you see a vortex forming in the water beneath you.
 
-As you hit the water the vortex pulls you in, with lights flickering all around you. You are thrown around in the water violently. You struggle to breathe and try to over come your body's natural response to hold your breath. Finally, as you override your brain's wiring, you let the water into your lungs.
+As you hit the water the vortex pulls you in, with lights flickering all around you. You are thrown around in the water violently. You struggle to breathe and try to over come your body's natural response against holding your breath. Finally, as you override your brain's wiring, you let the water into your lungs.
 You see the lights fading away.
 .
 .
 .
 .
 .
-You wake up in your bed. There's a note next to you.
-"Hey sleepy. I have to get to work early today. I'll see you at dinner. xoxo"
-
-You check the calender. It's 4 days before your anniversary. You think you might be dreaming. You pinch yourself, slap your self, trying every possible way to wake yourself up. Nothing is changing.
-"Was all of that a dream? It felt way too real to me.", you think to yourself.
-~n=1
-// You think about your anniversary date. "Maybe something happened then. Maybe I can change something."
--> intro
+    * [OPEN YOUR EYES]
+    You wake up in your bed. There's a note next to you.
+    "Hey sleepy. I have to get to work early today. I'll see you at dinner. xoxo"
+    
+    You check the calender. It's 4 days before your anniversary. You think you might be dreaming. You pinch yourself, slap your self, trying every possible way to wake yourself up. Nothing is changing.
+    "Was all of that a dream? It felt way too real to me.", you think to yourself.
+    ~n=1
+    // You think about your anniversary date. "Maybe something happened then. Maybe I can change something."
+    -> intro

@@ -51,26 +51,26 @@ You immedietly get up from your seat and kneel down beside your partner. You put
 
 You take the napkin placed on the table and try to wipe away your partner's tears.
 
-"You know you can tell me anything right? It's okay if you don't want to right now. Just know I'm here whenever you need me."
+// "You know you can tell me anything right? It's okay if you don't want to right now. Just know I'm here whenever you need me."
 
-Hearing this, your partner feels a bit better. They look at you and smile a little.
+// Hearing this, your partner feels a bit better. They look at you and smile a little.
 
-You realize this might be the first time you're seeing them smile in quite a while.
+// You realize this might be the first time you're seeing them smile in quite a while.
 
-"Come on now... Who's going to devour your favorite Risotto?"
+// "Come on now... Who's going to devour your favorite Risotto?"
 
-They chuckle.
+// They chuckle.
 
 -> call_server
 
 ===food===
 The waiter comes along to ask you about your order. Your partner orders Pan-fried potatoes with a side of veggies. You wonder why they didn't order what they usually have.
-    + [THEY MUST BE FOCUSSING ON THEIR DIET]
+    + [ORDER YOUR FOOD]
         "I'll have a Ragu alla Bolognese with a side of steamed carrots and french beans"
         {negative(1)}
         -> conversation
         // Write some subsequent dialogue
-    + [ASK YOUR PARTNER WHY THEY ARE NOT ORDERING THEIR FAVORITE MEAL]
+    + [HMMM...]
         "What happened? Why aren't you ordering your usual Risotto Alla Milanese?"
         -> whats_wrong
         // Write some subsequent dialogue
@@ -80,10 +80,10 @@ The waiter comes along to ask you about your order. Your partner orders Pan-frie
 ===food_2===
 The waiter comes along to ask you about your order.
 
-    + [ORDER FOR THEM]
+    + [ASK FOR THEIR FAVORITE]
         "I'll have a Ragu alla Bolognese with a side of steamed carrots and french beans and a Risotto Alla Milanese for this beautiful person in front of me"
         {negative(1)}
-    + [LET THEM ORDER]
+    + [ASK WHAT THEY WOULD LIKE]
         {positive(1)}
         Your partner looks at you. "I really don't feel like having my favorite tonight. If that's okay"
         "Sure thing! Order whatever you like"
@@ -105,9 +105,9 @@ The waiter comes along to ask you about your order.
     "Thanks hon you're the best!!"
     {negative(1)}
     
-+[TALK ABOUT BLAKE FROM WORK]
-    "I bumped into Blake today at work; who seemed to be in a specially smug mood. I don't know why but it felt like he was trying to show that he's superior to me."
-    As soon as your partner hear's the name "Blake", they tense up and get nervous.
++{!cheating_confirmed}[TALK ABOUT BLAKE FROM WORK]
+    "I bumped into Blake today at work; they seemed to be a bit awkward. That was a bit odd I felt"
+    Your partner lowers their eyes. 
     
     ++{evidence_found}[NOTICE NERVOUSNESS AND ACCUSE]
         -> accuse
@@ -118,13 +118,29 @@ The waiter comes along to ask you about your order.
 
     
 ===conversation2===
-+{evidence_found}[TALK ABOUT THE LETTER YOU FOUND]
++{evidence_found}[TALK ABOUT THE TEXT YOU SAW]
     -> accuse
-+{!evidence_found}[APOLOGISE FOR NOT HAVING BEEN THERE FOR YOUR PARTNER]
++{!evidence_found or cheating_confirmed}[APOLOGISE FOR NOT HAVING BEEN THERE FOR YOUR PARTNER]
     -> apologise
+
 ===accuse===
+"I don't know if there's a better way to do this. Is there something going on between you and Blake? Is that why you've been so distant? Please tell me the truth"
+They don't say anything. Their eyes never look into yours, and a tear rolls down her cheeks.
+.
+.
+They don't need to say anything more.
+~ cheating_confirmed = true
 {negative(3)}
-->END
++"HOW COULD YOU DO THIS TO ME?"
+    {positive(1)}
+    You lash out at your partner. You scream at them for their unfaithfulness. You ask what went wrong. They sit there silently with tears rolling down their eyes. 
+    You stop after a while. You drink a glass of water and calm yourself down. 
++[STAY SILENT]
+    {negative(1)}
+    You both stay silent for a while. They are unable to look into your eyes. You keep on thinking about why it all went so wrong.
+-   You wonder if this has anything to do with your partner committing suicide. You are conflicted with the emotions in your head.
+    "What should I do?", you think to yourself.
+    ->dinner_exit
 
 ===apologise===
 "So listen... I know I haven't been around lately. I've been swamped with work and just didn't took the time to spend it with you. I know I can act like I don't care but I get lost in my work. These are not excuses. I just want to say I'm sorry. I will try to work on this. That's a promise. 
@@ -132,9 +148,11 @@ The waiter comes along to ask you about your order.
 
 ===dinner_exit===
 You finish up your dinner and tip the waiter. 
-+{!evidence_found}[ASK FOR A WALK]
++{!cheating_confirmed}[ASK FOR A WALK]
     -> ask_walk
-+{evidence_found}[GO HOME SEPERATELY]
++{cheating_confirmed}[TAKE A CAB HOME]
+    -> home_direct
++{cheating_confirmed}[GO HOME SEPERATELY]
     -> seperately
 
 ===ask_walk===
@@ -149,32 +167,75 @@ You finish up your dinner and tip the waiter.
 }
 
 ===seperately===
-->END
+"I want to be alone for some time.", you said and left for a walk. You can hear your partner crying behind you, but at this point you're unable to look at their face.
+You take a long walk, trying to think of what to do.
+.
+.
+.
+You go back home. You enter your room and see your partner crying in the bed. Her mascara has flown all the way down her cheeks.
++ [GO TO SLEEP WITHOUT SAYING ANYTHING]
+    {(negative(3))}
+    ~angry = true
++ [PUT A HAND ON THEIR HEAD]
+    ~angry = false
+    "We'll talk about this tomorrow. I'm not there yet, but I think I can forgive you. Please stop crying. It's late and we should go to bed."
+    "I love you", you whisper to her.
+    
+    She gives you a surprised look initially, which turns into a slight smile.
+    
+    You go to bed praying that things don't turn out the same way this time.
+-   -> time_ending
 
 ===walk===
+{positive(2)}
 You take a walk through China Town. You used to come here often when you started dating. It all feels like it happened yesterday. Your partner was extremely fond of the food stands, all the restaurants restaurants along with the stores selling ancient artifact replicas. They alwasy had an interest in Chinese history and so this place meant a lot to them.
 
 You walk all the way to the Manhattan bridge, which is you and your partner's favorite spot. You put your arm around their shoulder and they gently nestle onto your shoulder. You have a really positive feeling about the night. You hope that things get better after this. 
 
 You head back home. You kiss your partner good night and you both go to sleep.
-->time_ending
+-> evidence_check
 
 ===home_direct===
-You get back home with your partner. 
-{ -n<2 : 
+You go back home with your partner. 
+{ 
+    - TURNS_SINCE(->accuse) == 1 : Both of you stay silent the whole way. You think hard about what to do. You think about how big the betrayal is, and whether you can forgive them for it.   
+    - n<2 : 
     Things feel very disconnected and you keep on wondering what you could have done to change them. Your partner goes to your room and goes to bed directly.
-    -else: 
+    - else : 
     You go to bed praying that things don't turn out the same way this time. You keep on replaying the night in your head, thinking of what can be done differently. 
 }
--> time_ending
+-> evidence_check
 
-===time_ending===
-.
-.
-.
+===evidence_check===
 {   
-    - n>=3 : 
-        -> death_loop
+    - n==3 : 
+        -> cheating
     - else: 
-        -> random 
+        -> time_ending
 }
+
+===cheating===
+You're barely able to sleep due to your anxiety, just when you hear a low chime from somewhere. You look around to see where it came from. It sounded like it came from a phone, but it didn't come from your phone.
+* [TAKE A LOOK AT YOUR PARTNER'S PHONE]
+    You get up to check your partner's phone. There's a text message from Blake.
+    "Hmmm, that's weird. It's quite late right now.", you think to yourself.
+    **[READ TEXT FROM BLAKE]
+        You decide to read the text.
+        "Do you want to talk?", the text read.
+        You try to scroll up but the only other text in the chain is the one your partner sent earlier in the evening
+        {
+            - partner >= 7 :
+                "I can't do this to him anymore", read the text.
+            - else :
+                "It isn't working anymore", read the text.
+        }
+        You think it's strange that these are the only two texts in the chain.
+        ~evidence_found = true
+        Your head starts coming up with explanations. Your anxiety is 100x worse now. You keep on twisting and turning in bed, praying for sleep to come soon and end this nightmare.
+        -> time_ending
+    **[PUT PHONE AWAY]
+        You have more pressing concerns to worry about. You put the phone back and go back to analyzing all the points in your date. There's a pit forming in your stomach. You're afraid to fall asleep.
+        -> time_ending
+* [GO BACK TO SLEEP]
+    You decide to ignore the chime and go back to sleep. There's a pit forming in your stomach as you're analyzing the date for events, thinking about how you could change things. Sleep seems way out of your reach for tonight.
+    -> time_ending

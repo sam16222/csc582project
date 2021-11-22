@@ -16,6 +16,8 @@ VAR n = 0
 VAR partner = 3
 VAR self = 0
 VAR evidence_found = false
+VAR cheating_confirmed = false
+VAR angry = false
 
 ===intro===
 ~partner = 3
@@ -29,8 +31,8 @@ VAR evidence_found = false
         You decide to take them for dinner to La Diornos, where you had your first date! 
     // +(choice_balloon)[TAKE THEM ON A HOT AIR BALLOON RIDE OVER the MANHATTAN SKYLINE] 
     //     You decide to take your partner through a romantic balloom ride over the manhattan skyline.
-    // +(choice_carriage)[TAKE THEM ON A HORSE DRAWN CARRIAGE THROUGH CENTRAL PARK]
-    //     You decide to take your partner through a romantic carriage ride through Central Park. It's your partner's favorite place in New York and you hope it makes them feel great.
+    +(choice_carriage)[TAKE THEM ON A HORSE DRAWN CARRIAGE THROUGH CENTRAL PARK]
+        You decide to take your partner through a romantic carriage ride through Central Park. It's your partner's favorite place in New York and you hope it makes them feel great.
     - -> choice
 
 ===choice===
@@ -45,9 +47,9 @@ VAR evidence_found = false
     -intro.choice_dinner:
         {positive(1)}
         -> dinner
-    // -intro.choice_carriage:
-    //     {positive(1)}
-    //     -> carriage
+    -intro.choice_carriage:
+        {negative(1)}
+        -> carriage
             
 }
 

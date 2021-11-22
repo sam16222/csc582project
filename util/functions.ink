@@ -2,14 +2,18 @@
 	~ return TURNS_SINCE(x) == 0
 
 === function positive(num)
-    { partner+num < 10:
-		~ partner+=num
+    {   partner+num <= 10:
+		    ~ partner+=num
+		-else:
+		    ~ partner = 10
 	}
     {play_music()}
     
 === function negative(num)
-    { partner-num > 0:
-		~ partner-=num
+    {   partner-num >= 0:
+		    ~ partner-=num
+	    -else:
+		    ~ partner = 0
 	}
     {play_music()}
     
