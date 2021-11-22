@@ -9,7 +9,7 @@ INCLUDE scene/endings.ink
 
 
 
--> intro
+-> warning
 
 // variables
 VAR n = 0
@@ -18,6 +18,13 @@ VAR self = 0
 VAR evidence_found = false
 VAR cheating_confirmed = false
 VAR angry = false
+
+
+=== warning ===
+#IMAGE: images/Content-warning.jpg
+
+* [CONTINUE] -> intro
+* [NO THANKS] -> END
 
 ===intro===
 ~partner = 3
