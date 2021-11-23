@@ -26,7 +26,7 @@ You're coming back home the next day. You see the lights are switched off.
 	    It pitch black. 
 	    + [SWITCH ON THE LIGHTS]
 	    You turn on the lights
-	   // # LIGHTS: on
+	    // # LIGHTS: on
 	    .
 	    .
 	    .
@@ -50,7 +50,7 @@ You're coming back home the next day. You see the lights are switched off.
 	    As you walk closer though, you realize they are not responding. You call out but there is no answer. 
 	    + [SWITCH ON THE LIGHTS]
 	    You turn on the lights.
-	   // # LIGHTS: on
+	    // # LIGHTS: on
 	    When you get next to them, you see a bottle of pills next to them.
 	    -> save_or_sunder_ending
 	-   You break through the window and run to your bedroom. 
@@ -58,7 +58,7 @@ You're coming back home the next day. You see the lights are switched off.
 	    As you walk closer though, you realize they are not responding. You call out but there is no answer. 
 	    + [SWITCH ON THE LIGHTS]
 	    You turn on the lights. 
-	   // # LIGHTS: on
+	    // # LIGHTS: on
 	    When you get next to them, you see a bottle of poison next to them. 
 	    -> save_or_sunder_ending
 }
