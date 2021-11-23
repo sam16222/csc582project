@@ -79,7 +79,7 @@ You run to your partner and call out their name. You grab their shoulders and tr
 
 
 ===let_die===
-//select ending music
+#AUDIO: audio/5-5.mp3
 // # LIGHTS: off
 You are unable to deal with the betrayal. You want to see the person that hurt you, who you no longer can trust, suffer.
 
@@ -93,7 +93,7 @@ END - Condemn
 -> END
 
 ===save_forgive===
-//select ending music
+#AUDIO: audio/1-1.mp3
 
 You start crying as you try and call 911 for help.
 
@@ -120,7 +120,7 @@ As the ambulance arrives, you feel a sense of relief come over you.
 
 
 ===save_seperate===
-//select ending music
+#AUDIO: audio/2-2.mp3
 You start crying as you try and call 911 for help.
 
 "It's okay... It's all gonna be okay... Stay with me"
@@ -147,7 +147,7 @@ As the ambulance arrives, you feel a sense of relief come over you.
 
 ===give_up===
 // # LIGHTS: off
-//select ending music
+#AUDIO: audio/3-3.mp3
 You're tired of the same loop everytime. 
 You decide to give up on saving your partner by trying to jump back in time.
 
@@ -159,7 +159,7 @@ END - Give Up
 ->END
 
 ===death_loop===
-//select ending music
+#AUDIO: audio/4-4.mp3
 // # LIGHTS: off
 As you try again and again to save your partner, and fail, it takes a toll on you.
 
@@ -235,7 +235,6 @@ You're coming back home the next day. You see the lights are switched off.
     	    When you get next to them, you see a bottle of poison next to them. They have ingested poison and aren't breathing anymore.
     	    -> loop
 }
--> loop
 
 ===loop===
 
