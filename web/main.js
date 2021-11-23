@@ -79,7 +79,7 @@
                     this.audio.load();
                   }
                   this.audio = new Audio(splitTag.val);
-                  this.audio.volume = 0.2;
+                  this.audio.volume = 0.1;
                   this.audio.play();
                 }
 
@@ -91,7 +91,7 @@
                     this.audioLoop.load();
                   }
                   this.audioLoop = new Audio(splitTag.val);
-                  this.audioLoop.volume = 0.2;
+                  this.audioLoop.volume = 0.1;
                   this.audioLoop.play();
                   this.audioLoop.loop = true;
                 }
