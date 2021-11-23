@@ -133,7 +133,7 @@ The waiter comes along to ask you about your order.
 
     
 ===conversation2===
-+{evidence_found}[TALK ABOUT THE TEXT YOU SAW]
++{evidence_found and !cheating_confirmed}[TALK ABOUT THE TEXT YOU SAW]
     -> accuse
 +{!evidence_found or cheating_confirmed}[APOLOGISE FOR NOT HAVING BEEN THERE FOR YOUR PARTNER]
     -> apologise
@@ -187,7 +187,7 @@ You take a long walk, trying to think of what to do.
 .
 .
 .
-You go back home. You enter your room and see your partner crying in the bed. Her mascara has rolled all the way down her cheeks.
+You go back home. You enter your room and see your partner crying in the bed. Their mascara has rolled all the way down their cheeks.
 + [GO TO SLEEP WITHOUT SAYING ANYTHING]
     {(negative(3))}
     ~angry = true
@@ -196,7 +196,7 @@ You go back home. You enter your room and see your partner crying in the bed. He
     "We'll talk about this tomorrow. I'm not there yet, but I think I can forgive you. Please stop crying. It's late and we should go to bed."
     "I love you", you whisper to her.
     
-    She gives you a surprised look initially, which turns into a slight smile.
+    They gives you a surprised look initially, which turns into a slight smile.
     
     You go to bed praying that things don't turn out the same way this time.
 -   -> time_ending
@@ -240,9 +240,9 @@ You're barely able to sleep due to your anxiety, just when you hear a low chime 
         You try to scroll up but the only other text in the chain is the one your partner sent earlier in the evening
         {
             - partner >= 7 :
-                "I can't do this to him anymore", read the text.
+                "I can't do this to them anymore", read the text.
             - else :
-                "It isn't working anymore", read the text.
+                "I shouldn't have done this.", read the text.
         }
         You think it's strange that these are the only two texts in the chain.
         ~evidence_found = true

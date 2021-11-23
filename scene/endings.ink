@@ -149,6 +149,7 @@ As the ambulance arrives, you feel a sense of relief come over you.
 // # LIGHTS: off
 #AUDIO: audio/3-3.mp3
 You're tired of the same loop everytime. 
+
 You decide to give up on saving your partner by trying to jump back in time.
 
 You're an empty shell.
@@ -161,20 +162,33 @@ END - Give Up
 ===death_loop===
 #AUDIO: audio/4-4.mp3
 // # LIGHTS: off
-As you try again and again to save your partner, and fail, it takes a toll on you.
-
-Watching your partner die multiple times... each time a different way... breaks you.
-
-Your mental state is in so many pieces you don't even know if you can ever be the person you once were.
-
-You try to kill yourself, but you wake up 4 days before your anniversary no matter what you do.
-
-You're an empty shell.
-
-You have accepted your hell and continue to try and save your partner, knowing you'll fail.
-
-END - Hell Without End
--> END
+You're coming back home the next day. You see the lights are switched off.
+You break through the window and run to your bedroom. 
+The room is empty. A strange feeling of comfort overtakes you temporarily, but then you hear the water running. 
+You run to the bathroom.
+It pitch black. 
++ [SWITCH ON THE LIGHTS]
+    You turn on the lights
+   // # LIGHTS: on
+    .
+    .
+    .
+    You find your partner sitting in a pool of blood. They died by bleeding out.
+    + [CONTINUE]
+        As you try again and again to save your partner, and fail, it takes a toll on you.
+        
+        Watching your partner die multiple times... each time a different way... breaks you.
+        
+        Your mental state is in so many pieces you don't even know if you can ever be the person you once were.
+        
+        You try to kill yourself, but you wake up 4 days before your anniversary no matter what you do.
+        
+        You're an empty shell.
+        
+        You have accepted your hell and continue to try and save your partner, knowing you'll fail.
+    
+        END - Hell Without End
+- -> END
 
 ===random===
 //select ending music
