@@ -7,16 +7,17 @@
         -> random
     - else : 
         {
+            - (partner >= 8 and cheating_confirmed) or (cheating_confirmed and angry):
+                -> save_or_sunder
             - n>=5 : 
                 -> death_loop
-            - partner <= 8 :
-                -> random
             - else : 
-                -> save
+                -> random
         }
 }
 
-===save===
+// need a way to gett to "let die" and "save separate" without partner > 8
+===save_or_sunder===
 You're coming back home the next day. You see the lights are switched off.
 { shuffle:
 	- 	You break through the window and run to your bedroom. 
@@ -48,10 +49,11 @@ You're coming back home the next day. You see the lights are switched off.
 You run to your partner and call out their name. You grab their shoulders and try to get them to respond with all you've got. You hear a faint whisper of a breath coming out of them.
 "They're alive!", you think to yourself
 * [SAVE THEM]
+// shouldn't be able to get here unless this conditional works, according to conditional on line 9-16
     {
         - angry :
             -> save_seperate
-        - else :
+        - partner >= 8 :
             -> save_forgive
     }
 * {cheating_confirmed and angry} [LET THEM DIE]
@@ -67,6 +69,8 @@ You let them down on the floor slowly.
 You turn around and start walking in the other direction. 
 
 You don't care if they live or die.
+
+END - Condemn
 -> END
 
 ===save_forgive===
@@ -90,6 +94,7 @@ While you're coming home from the hospital after their discharge, you hold their
 
 Your partner starts crying and hugs you. You hold them tightly.
 
+END - Save and Redress
 ->END
 
 
@@ -115,6 +120,7 @@ A few days later, when you're sure that your partner is getting the help they ne
 
 "I'm sorry but I don't think I can be with you anymore. I sincerely wish you the best in the world. But.... this is it...", you tell them as you see the disappointed acceptance in their eyes.
 
+END - Save and Separate
 ->END
 
 ===give_up===
@@ -125,6 +131,8 @@ You decide to give up on saving your partner by trying to jump back in time.
 You're an empty shell.
 
 You have accepted your hell.
+
+END - Give Up
 ->END
 
 ===death_loop===
@@ -140,6 +148,8 @@ You try to kill yourself, but you wake up 4 days before your anniversary no matt
 You're an empty shell.
 
 You have accepted your hell and continue to try and save your partner, knowing you'll fail.
+
+END - Hell Without End
 -> END
 
 ===random===
@@ -186,9 +196,9 @@ You're coming back home the next day. You see the lights are switched off.
 {n==1: You think of how things were similar to your dream. You remember how you jumped into the water and then woke up in your bed having gone back in time.}
 + [TRAVEL BACK IN TIME]
     ~n++
-    You run to the vortex with all you got.
+    You run to the vortex with everything you have.
     You arrive at the bridge and then dive straight into the water. The lightning vortex forms around you.
-    You wake up in bed again. It's 4 days to go to your anniversary.
+    You wake up in bed again. It's 4 days until to your anniversary.
     .
     .
     .

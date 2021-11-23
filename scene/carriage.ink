@@ -124,7 +124,7 @@ As the carriage comes to a halt, you jump out from the carriage.
     "Can we just have some street food and go home?"
     
     {n > 2: 
-        ++ [THEY DON'T LIKE STREET FOOD] -> street_food 
+        ++ [SOMETHING IS UP, THEY DON'T LIKE STREET FOOD] -> street_food 
         ++ [CONVINCE THEM TO STAY A WHILE] -> convince
     
     }
@@ -182,7 +182,7 @@ They break down, crying while saying "I'm so sorry" repeatedly.
 
 + {!cheating_confirmed} "What is up with you? Tell me what I'm doing wrong please." 
                             -> annoyed
-+ {!cheating_confirmed} "Is everythink okay? You know you can talk to me right?" 
++ {!cheating_confirmed} "Is everything okay? You know you can talk to me right?" 
                             -> console
 + {cheating_confirmed} "It's okay. It'll be alright." 
                             "Hey come on now! You didn't do anything wrong", you try and make them feel better.
@@ -237,7 +237,7 @@ You keep looking at them, as you absorb what your partner is saying.
 
 "Blake came over to visit one night. I wasn't in the right state of mind... "
 
-They stand their crying uncontrollably. Nothing else needed to be said anymore.
+They start crying uncontrollably. Nothing else needs to be said anymore.
 
 ~ cheating_confirmed = true
 + "HOW COULD YOU DO THIS TO ME!? 

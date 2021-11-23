@@ -15,9 +15,9 @@ You pull the chair back for your partner and they take a seat. You sit across fr
         "Ah so it was a relaxing day for you then"
         (faintly) "Yeah"
         
-        ** [CALL FOR SOME SERVICE] -> call_server
+        ++ [CALL FOR SOME SERVICE] -> call_server
             
-        ** {n>1} [ASK WHAT'S WRONG] -> whats_wrong
+        ++ {n>1} [ASK WHAT'S WRONG] -> whats_wrong
         
     + "How is your sister doing? I remember she was going through a tough time at work["].".
         "I don't know... I haven't talked to her in a while."
@@ -70,12 +70,27 @@ The waiter comes along to ask you about your order. Your partner orders Pan-frie
         {negative(1)}
         -> conversation
         // Write some subsequent dialogue
-    + [HMMM...]
+    + [ASK THEM IF SOMETHING IS WRONG]
         "What happened? Why aren't you ordering your usual Risotto Alla Milanese?"
-        -> whats_wrong
+        -> whats_wrong_from_food
         // Write some subsequent dialogue
 
-        
+
+===whats_wrong_from_food===
+{positive(1)}
+You look at your partner and see that they're showing disinterest in everything. You decide to do something about it.
+
+"Hey... what's wrong? You don't seem... yourself", you ask with concern.
+
+Your partner looks at you and as soon as you make eye contact, they start tearing up.
+
+You immedietly get up from your seat and kneel down beside your partner. You put a reassuring arm around her and try to console her.
+
+"It's okay... Everything's fine."
+
+You take the napkin placed on the table and try to wipe away your partner's tears.
+   
+   + [CHANGE THE TOPIC] -> conversation 
         
 ===food_2===
 The waiter comes along to ask you about your order.
