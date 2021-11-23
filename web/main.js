@@ -79,7 +79,7 @@
                     this.audio.load();
                   }
                   this.audio = new Audio(splitTag.val);
-                  this.audio.volume = 0.1;
+                  this.audio.volume = 0.2;
                   this.audio.play();
                 }
 
@@ -91,7 +91,7 @@
                     this.audioLoop.load();
                   }
                   this.audioLoop = new Audio(splitTag.val);
-                  this.audioLoop.volume = 0.1;
+                  this.audioLoop.volume = 0.2;
                   this.audioLoop.play();
                   this.audioLoop.loop = true;
                 }
@@ -193,7 +193,7 @@
         // Extend height to fit
         // We do this manually so that removing elements and creating new ones doesn't
         // cause the height (and therefore scroll) to jump backwards temporarily.
-        // storyContainer.style.height = (contentBottomEdgeY()+100)+"px";
+        storyContainer.style.height = (contentBottomEdgeY())+"px";
 
         if( !firstTime )
             scrollDown(previousBottomEdge);
@@ -252,8 +252,9 @@
     // The Y coordinate of the bottom end of all the story content, used
     // for growing the container, and deciding how far to scroll.
     function contentBottomEdgeY() {
+        var imageHidden = storyContainer.children[6].className == "hide";
         var bottomElement = storyContainer.lastElementChild;
-        return bottomElement ? bottomElement.offsetTop + bottomElement.offsetHeight : 0;
+        return bottomElement ? bottomElement.offsetTop + bottomElement.offsetHeight + (imageHidden ? 650 : 0) : 0;
     }
 
     // Remove all elements that match the given selector. Used for removing choices after
