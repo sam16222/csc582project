@@ -215,7 +215,7 @@ You go back home with your partner.
 { 
     - TURNS_SINCE(->accuse) == 1 : Both of you stay silent the whole way. You think hard about what to do. You think about how big the betrayal is, and whether you can forgive them for it.   
     - n<2 : 
-    Things feel very disconnected and you keep on wondering what you could have done to change them. Your partner goes to your room and goes to bed directly.
+    Things feel very disconnected and you keep on wondering what you could have done to help them. Your partner goes to your room and goes to bed directly.
     - else : 
     You go to bed praying that things don't turn out the same way this time. You keep on replaying the night in your head, thinking of what can be done differently. 
 }

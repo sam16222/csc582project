@@ -193,7 +193,7 @@
         // Extend height to fit
         // We do this manually so that removing elements and creating new ones doesn't
         // cause the height (and therefore scroll) to jump backwards temporarily.
-        // storyContainer.style.height = contentBottomEdgeY()+"px";
+        // storyContainer.style.height = (contentBottomEdgeY()+100)+"px";
 
         if( !firstTime )
             scrollDown(previousBottomEdge);

@@ -145,7 +145,7 @@ You head home. Your partner says nothing on the way back.
 When you get back, your partner changes their clothes and without saying a word, go to bed.
 { 
     - n<2 : 
-    Things feel very disconnected and you keep on wondering what you could have done to change them. 
+    Things feel very disconnected and you keep on wondering what you could have done to help them. 
     - else : 
     You go to bed praying that things don't turn out the same way this time. You keep on replaying the night in your head, thinking of what could be done differently. 
 }

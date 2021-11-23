@@ -41,7 +41,7 @@ Chronic Dissonance is a dark story about your character's struggle with their pa
         
 - 1: 	 You cannot get over how crazy your dream was. "How could I dream such an elaborate sequence?" However, it does get you thinking about your anniversary. While things haven't been going the best, surely nothing too serious is going on, right?
 
-- else: You wake up in bed again. The note, the calendar, everything is the same as you remember. You really are going back in time. Resolving not to question how this is possible, you instead decide to focus on the matter at hand: Something is wrong with your partner, and it's up to you to find out what.
+- else: The note, the calendar, everything is the same as you remember. You really are going back in time. Resolving not to question how this is possible, you instead decide to focus on the matter at hand: Something is wrong with your partner, and it's up to you to find out what.
 }
     
     +(choice_dinner)[TAKE THEM TO DINNER AT THE RESTAURANT OF YOUR FIRST DATE] 
@@ -62,7 +62,6 @@ Chronic Dissonance is a dark story about your character's struggle with their pa
     //  +(choice_balloon)[TAKE THEM ON A HOT AIR BALLOON RIDE OVER the MANHATTAN SKYLINE] 
     //  You decide to take your partner through a romantic balloom ride over the manhattan skyline.
             
-    - -> choice
 
 ===choice===
 {n < 2 : You've been looking forward to this for a while and can't wait for it to happen finally.} 
