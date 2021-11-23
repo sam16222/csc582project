@@ -1,4 +1,5 @@
 ===time_ending===
+// This function will choose the ending, based on multiple factors
 .
 .
 .
@@ -16,7 +17,6 @@
         }
 }
 
-// need a way to gett to "let die" and "save separate" without partner > 8
 ===save_or_sunder===
 You're coming back home the next day. You see the lights are switched off.
 { shuffle:
@@ -79,7 +79,7 @@ You run to your partner and call out their name. You grab their shoulders and tr
 
 
 ===let_die===
-#AUDIO: audio/5-5.mp3
+#AUDIOLOOP: audio/5-5.mp3
 // # LIGHTS: off
 You are unable to deal with the betrayal. You want to see the person that hurt you, who you no longer can trust, suffer.
 
@@ -93,7 +93,7 @@ END - Condemn
 -> END
 
 ===save_forgive===
-#AUDIO: audio/1-1.mp3
+#AUDIOLOOP: audio/1-1.mp3
 
 You start crying as you try and call 911 for help.
 
@@ -120,7 +120,7 @@ As the ambulance arrives, you feel a sense of relief come over you.
 
 
 ===save_seperate===
-#AUDIO: audio/2-2.mp3
+#AUDIOLOOP: audio/2-2.mp3
 You start crying as you try and call 911 for help.
 
 "It's okay... It's all gonna be okay... Stay with me"
@@ -147,7 +147,7 @@ As the ambulance arrives, you feel a sense of relief come over you.
 
 ===give_up===
 // # LIGHTS: off
-#AUDIO: audio/3-3.mp3
+#AUDIOLOOP: audio/3-3.mp3
 You're tired of the same loop everytime. 
 
 You decide to give up on saving your partner by trying to jump back in time.
@@ -160,7 +160,7 @@ END - Give Up
 ->END
 
 ===death_loop===
-#AUDIO: audio/4-4.mp3
+#AUDIOLOOP: audio/4-4.mp3
 // # LIGHTS: off
 You're coming back home the next day. You see the lights are switched off.
 You break through the window and run to your bedroom. 
@@ -191,7 +191,7 @@ It pitch black.
 - -> END
 
 ===random===
-//select ending music
+// This knot will choose a random death ending for your partner
 You're coming back home the next day. You see the lights are switched off.
 { shuffle:
 	- 	You break through the window and run to your bedroom. 

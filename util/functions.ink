@@ -2,6 +2,7 @@
 	~ return TURNS_SINCE(x) == 0
 
 === function positive(num)
+    //This function will increment your partner's positivty level.
     {   partner+num <= 10:
 		    ~ partner+=num
 		-else:
@@ -10,6 +11,7 @@
     {play_music()}
     
 === function negative(num)
+    //This function will decrement your partner's positivty level.
     {   partner-num >= 0:
 		    ~ partner-=num
 	    -else:

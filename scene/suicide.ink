@@ -1,3 +1,5 @@
+//This file is the suicide scene, which will essentially be a series of unchoices, that will lead to your partner's suicide at the end of it.
+
 == suicide_beginning ==
 #AUDIOLOOP: audio/1-5.mp3
 On your way back from work, you notice a new gift shop.

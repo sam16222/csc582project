@@ -66,10 +66,8 @@ Chronic Dissonance is a dark story about your character's struggle with their pa
         The date does not go as planned. You hit a couple of rocky spots. At least it ended with a nice walk back home through some of your favorite spots. You think maybe that made up for the rest of the evening.
         * [ADVANCE TIME] -> suicide_beginning
     -else :
+        //Go to the scene chosen by the player.
+        //Your actions in this scene will then determine if your partner dies or not.
         -> date
             
 }
-
-===enter_scene===
-THIS SCENE IS THE DATE DESCRIPTION. THE SUBSEQUENT TIMES YOU GET HERE, YOU WILL HAVE TO CHOOSE YOUR BEHAVIOUR WHICH WILL HAVE AN EFFECT ON THE OUTCOME, AND THE MUSIC WILL CHANGE BASED ON YOUR CHOICES.
-+ [GO TO SUICIDE]->intro
