@@ -4,11 +4,6 @@ INCLUDE util/functions.ink
 INCLUDE scene/carriage.ink
 INCLUDE scene/endings.ink
 
-
-#theme: dark
-
-
-
 -> start_screen
 
 // variables
@@ -37,33 +32,30 @@ Chronic Dissonance is a dark story about your character's struggle with their pa
 ~partner = 4
 { n:
 - 0: 	It's 4 days until your 10th wedding anniversary and you've been planning to give your partner the best night of their life. Things have been a bit rocky between the two of you and you haven't been able to dedicate time to fixing things. 
-        -> choice
+        -> choice (-> suicide_beginning)
         
 - 1: 	 You cannot get over how crazy your dream was. "How could I dream such an elaborate sequence?" However, it does get you thinking about your anniversary. While things haven't been going the best, surely nothing too serious is going on, right?
 
 - else: The note, the calendar, everything is the same as you remember. You really are going back in time. Resolving not to question how this is possible, you instead decide to focus on the matter at hand: Something is wrong with your partner, and it's up to you to find out what.
 }
     
-    +(choice_dinner)[TAKE THEM TO DINNER AT THE RESTAURANT OF YOUR FIRST DATE] 
+    +[TAKE THEM TO DINNER AT THE RESTAURANT OF YOUR FIRST DATE] 
         You decide to take them for dinner to La Diornos, where you had your first date! 
-        
-        {n < 2 : You've been looking forward to this for a while, and can't wait for it to finally happen.} 
-            {positive(1)}
-            -> dinner
+        {positive(1)}
+        -> choice (-> dinner)
             
 
-    +(choice_carriage)[TAKE THEM ON A HORSE DRAWN CARRIAGE THROUGH CENTRAL PARK]
+    +[TAKE THEM ON A HORSE DRAWN CARRIAGE THROUGH CENTRAL PARK]
         You decide to take your partner through a romantic carriage ride through Central Park. It's your partner's favorite place in New York and you hope it makes them feel great.
-        {n < 2 : You've been looking forward to this for a while, and can't wait for it to finally happen.} 
-            {negative(1)}
-            ->carriage
-            
+        {negative(1)}
+        -> choice(->carriage)
+        
     //  unimplemented choice
-    //  +(choice_balloon)[TAKE THEM ON A HOT AIR BALLOON RIDE OVER the MANHATTAN SKYLINE] 
+    //  +[TAKE THEM ON A HOT AIR BALLOON RIDE OVER the MANHATTAN SKYLINE] 
     //  You decide to take your partner through a romantic balloom ride over the manhattan skyline.
             
 
-===choice===
+===choice(-> date)===
 {n < 2 : You've been looking forward to this for a while and can't wait for it to happen finally.} 
 {   
     -n==0 : 
@@ -72,6 +64,8 @@ Chronic Dissonance is a dark story about your character's struggle with their pa
         .
         The date does not go as planned. You hit a couple of rocky spots. At least it ended with a nice walk back home through some of your favorite spots. You think maybe that made up for the rest of the evening.
         * [ADVANCE TIME] -> suicide_beginning
+    -else :
+        -> date
             
 }
 
