@@ -37,10 +37,6 @@ Chronic Dissonance is a dark story about your character's struggle with their pa
 ~partner = 4
 { n:
 - 0: 	It's 4 days until your 10th wedding anniversary and you've been planning to give your partner the best night of their life. Things have been a bit rocky between the two of you and you haven't been able to dedicate time to fixing things. 
-        .
-        .
-        .
-        However, the date does not go as planned. You hit a couple of rocky spots. At least it ended with a nice walk back home through some of your favorite spots. You think maybe that made up for the rest of the evening.
         -> choice
         
 - 1: 	 You cannot get over how crazy your dream was. "How could I dream such an elaborate sequence?" However, it does get you thinking about your anniversary. While things haven't been going the best, surely nothing too serious is going on, right?

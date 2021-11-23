@@ -51,7 +51,7 @@ You run to your partner and call out their name. You grab their shoulders and tr
 * [SAVE THEM]
 // shouldn't be able to get here unless this conditional works, according to conditional on line 9-16
     {
-        - angry :
+        - angry == true:
             -> save_seperate
         - partner >= 8 :
             -> save_forgive
