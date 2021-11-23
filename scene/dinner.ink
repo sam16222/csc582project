@@ -203,12 +203,12 @@ You go back home. You enter your room and see your partner crying in the bed. He
 
 ===walk===
 {positive(2)}
-You take a walk through China Town. You used to come here often when you started dating. It all feels like it happened yesterday. Your partner was extremely fond of the food stands, all the restaurants restaurants along with the stores selling ancient artifact replicas. They alwasy had an interest in Chinese history and so this place meant a lot to them.
+You take a walk through China Town. You used to come here often when you started dating. It all feels like it happened yesterday. Your partner was extremely fond of the food stands, all the restaurants restaurants along with the stores selling ancient artifact replicas. They always had an interest in Chinese history and so this place meant a lot to them.
 
 You walk all the way to the Manhattan bridge, which is you and your partner's favorite spot. You put your arm around their shoulder and they gently nestle onto your shoulder. You have a really positive feeling about the night. You hope that things get better after this. 
-
-You head back home. You kiss your partner good night and you both go to sleep.
--> evidence_check
++   [HEAD BACK HOME]
+    You head back home. You kiss your partner good night and you both go to sleep.
+    -> evidence_check
 
 ===home_direct===
 You go back home with your partner. 

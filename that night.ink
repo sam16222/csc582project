@@ -16,6 +16,7 @@ VAR angry = false
 
 
 === start_screen ===
+
 Chronic Dissonance is a dark story about your character's struggle with their partner's death. Throughout the story you will be faced with choices that will change the narrative... and the music. Aside from the narrative itself, the purpose of this project is to showcase the idea for music that seems to change along with your progress and choices in a way that reflects both of those. We hope you enjoy!
 
     Music and Research: Luke Knudsen

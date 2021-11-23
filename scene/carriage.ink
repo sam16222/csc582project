@@ -36,10 +36,10 @@ You see that your partner is admiring the carriage itself.
     {positive(1)}
     "Umm I don't know", they said, the surprise still setting in.
     "Pick a number then!"
-        ** (one) 1
-        ** (two) 2
-        ** (three) 3
-        ** (four) 4
+        ++ (one) 1
+        ++ (two) 2
+        ++ (three) 3
+        ++ (four) 4
         -- -> signal_coachman
 
 

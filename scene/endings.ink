@@ -23,29 +23,47 @@ You're coming back home the next day. You see the lights are switched off.
 	- 	You break through the window and run to your bedroom. 
 	    The room is empty. A strange feeling of comfort overtakes you temporarily, but then you hear the water running. 
 	    You run to the bathroom.
-	    It pitch black. You turn on the lights
+	    It pitch black. 
+	    + [SWITCH ON THE LIGHTS]
+	    You turn on the lights
+	   // # LIGHTS: on
 	    .
 	    .
 	    .
 	    You find your partner sitting in a pool of blood.
+	    -> save_or_sunder_ending
 	- 	You're a few steps away from the front door when you hear a sudden and loud thud right behind you. You turn around.
 	    .
 	    .
 	    . 
 	    You see your partner's body on the ground.
+	    -> save_or_sunder_ending
 	-   You break through the window and run to your bedroom. 
 	    The room is empty. A strange feeling of comfort overtakes you.
 	    .
 	    .
 	    .
 	    Just then you hear a car honking and a loud screeching sound. You run downstairs and you see that your partner has run into the oncoming traffic and have been badly hit by an SUV.
+	    -> save_or_sunder_ending
 	-   You break through the window and run to your bedroom. 
 	    You find your parner lying on the bed. A strange feeling of comfort overtakes you.
-	    As you walk closer though, you realize they are not responding. You call out but there is no answer. When you get next to them, you see a bottle of pills next to them.
+	    As you walk closer though, you realize they are not responding. You call out but there is no answer. 
+	    + [SWITCH ON THE LIGHTS]
+	    You turn on the lights.
+	   // # LIGHTS: on
+	    When you get next to them, you see a bottle of pills next to them.
+	    -> save_or_sunder_ending
 	-   You break through the window and run to your bedroom. 
 	    You find your parner lying on the bed. A strange feeling of comfort overtakes you.
-	    As you walk closer though, you realize they are not responding. You call out but there is no answer. When you get next to them, you see a bottle of poison next to them. 
+	    As you walk closer though, you realize they are not responding. You call out but there is no answer. 
+	    + [SWITCH ON THE LIGHTS]
+	    You turn on the lights. 
+	   // # LIGHTS: on
+	    When you get next to them, you see a bottle of poison next to them. 
+	    -> save_or_sunder_ending
 }
+
+===save_or_sunder_ending
 You run to your partner and call out their name. You grab their shoulders and try to get them to respond with all you've got. You hear a faint whisper of a breath coming out of them.
 "They're alive!", you think to yourself
 * [SAVE THEM]
@@ -62,6 +80,7 @@ You run to your partner and call out their name. You grab their shoulders and tr
 
 ===let_die===
 //select ending music
+// # LIGHTS: off
 You are unable to deal with the betrayal. You want to see the person that hurt you, who you no longer can trust, suffer.
 
 You let them down on the floor slowly.
@@ -127,6 +146,7 @@ As the ambulance arrives, you feel a sense of relief come over you.
     ->END
 
 ===give_up===
+// # LIGHTS: off
 //select ending music
 You're tired of the same loop everytime. 
 You decide to give up on saving your partner by trying to jump back in time.
@@ -140,11 +160,12 @@ END - Give Up
 
 ===death_loop===
 //select ending music
+// # LIGHTS: off
 As you try again and again to save your partner, and fail, it takes a toll on you.
 
 Watching your partner die multiple times... each time a different way... breaks you.
 
-Your mental state is in so many pieces you don't even know if you can ever be the person you once was.
+Your mental state is in so many pieces you don't even know if you can ever be the person you once were.
 
 You try to kill yourself, but you wake up 4 days before your anniversary no matter what you do.
 
@@ -162,41 +183,64 @@ You're coming back home the next day. You see the lights are switched off.
 	- 	You break through the window and run to your bedroom. 
 	    The room is empty. A strange feeling of comfort overtakes you temporarily, but then you hear the water running. 
 	    You run to the bathroom.
-	    It pitch black. You turn on the lights
-	    .
-	    .
-	    .
-	    You find your partner sitting in a pool of blood. They died by bleeding out.
+	    It pitch black. 
+	    + [SWITCH ON THE LIGHTS]
+    	    You turn on the lights
+    	   // # LIGHTS: on
+    	    .
+    	    .
+    	    .
+    	    You find your partner sitting in a pool of blood. They died by bleeding out.
+    	    -> loop
 	- 	You break through the window and run to your bedroom. 
 	    The room is empty. A strange feeling of comfort overtakes you temporarily, but then you hear the water running. 
 	    You run to the bathroom.
-	    It pitch black and there is a smell of burnt flesh in the air. You turn on lights
-	    .
-	    .
-	    .
-	    You find your partner in the bathtub, their body bent in a peculiar manner.
-	    You then witness a toaster submerged into the water. They died of an electrocution.
+	    It pitch black and there is a smell of burnt flesh in the air. 
+    	    + [SWITCH ON THE LIGHTS]
+    	    You turn on the lights
+    	   // # LIGHTS: on
+    	    .
+    	    .
+    	    .
+    	    You find your partner in the bathtub, their body bent in a peculiar manner.
+    	    You then witness a toaster submerged into the water. They died of an electrocution.
+    	    -> loop
 	- 	You're a few steps away from the front door when you hear a sudden and loud thud right behind you. You turn around.
 	    .
 	    .
 	    . 
-	    You see your partner's body on the ground. 
-	    //Write a better description
+	    You see your partner's body on the ground. A large pool of blood starts forming around your partner. You fall down on your knees. 
+	    -> loop
 	-   You break through the window and run to your bedroom. 
 	    The room is empty. A strange feeling of comfort overtakes you.
 	    .
 	    .
 	    .
 	    Just then you get a call from the cops. Your partner ran into oncoming traffic while leaving work. They had been rushed to the hospital but passed away on the operation table.
+	    -> loop
 	-   You break through the window and run to your bedroom. 
 	    You find your parner lying on the bed. A strange feeling of comfort overtakes you.
-	    As you walk closer though, you realize they are not responding. You call out but there is no answer. When you get next to them, you see a bottle of pills next to them. They have died of an overdose.
+	    As you walk closer though, you realize they are not responding. You call out but there is no answer. 
+    	    + [SWITCH ON THE LIGHTS]
+    	    You turn on the lights.
+    	   // # LIGHTS: on
+    	    When you get next to them, you see a bottle of pills next to them. They have died of an overdose.
+    	    -> loop
 	-   You break through the window and run to your bedroom. 
 	    You find your parner lying on the bed. A strange feeling of comfort overtakes you.
-	    As you walk closer though, you realize they are not responding. You call out but there is no answer. When you get next to them, you see a bottle of poison next to them. They have ingested poison and aren't breathing anymore.
+	    As you walk closer though, you realize they are not responding. You call out but there is no answer. 
+	    + [SWITCH ON THE LIGHTS]
+    	    You turn on the lights. 
+    	   // # LIGHTS: on
+    	    When you get next to them, you see a bottle of poison next to them. They have ingested poison and aren't breathing anymore.
+    	    -> loop
 }
+-> loop
+
+===loop===
 
 {n==1: You think of how things were similar to your dream. You remember how you jumped into the water and then woke up in your bed having gone back in time.}
+// # LIGHTS: off
 + [TRAVEL BACK IN TIME]
     ~n++
     You run to the vortex with everything you have.

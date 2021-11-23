@@ -8,8 +8,8 @@ You hope after the date that things will get back to normal soon.
     You get them a beautiful bouquet of flowers
 + [BUY A FRANK SINATRA RECORD] 
     You get them a vinyl record of "The Way You Look Tonight", which is their favorite song of all time
-+ [BUY A PURSE]
-    You get them a vintage magenta purse.
++ [BUY A LOCKET]
+    You get them a vintage gold heart-shaped locket, with your initials carved into it.
 - -> suicide_main
 
 ===suicide_main===
@@ -64,7 +64,6 @@ You call out their name trying to figure out if they're still here.
                     "What're you doing in the dark? I've been calling for you, why didn't you answer?"
                     No response.
                     **** [SWITCH ON THE LIGHTS]
-                        #theme: light
                         You switch on the lights.
                         
                         ...
@@ -74,7 +73,8 @@ You call out their name trying to figure out if they're still here.
                         
                         *****"This can't be happening" 
                             -> body_down
-                        
+                        *****"No, no no no no no."
+                            -> body_down
 ===body_down===
 You immedietly leap to try and bring your partner's body down. 
 They aren't breathing anymore. You stare blankly at their lifeless face, wishing they would come back to life. 
@@ -82,6 +82,7 @@ You bury your crying face in them.
 * [ADVANCE TIME] -> advance_time
 
 ===advance_time===
+// #LIGHTS : off
 .
 .
 .
@@ -114,5 +115,4 @@ You see the lights fading away.
     You check the calender. It's 4 days before your anniversary. You think you might be dreaming. You pinch yourself, slap your self, trying every possible way to wake yourself up. Nothing changes.
     "Was all of that a dream? It felt way too real to me.", you think to yourself.
     ~n=1
-    // You think about your anniversary date. "Maybe something happened then. Maybe I can change something."
     -> intro

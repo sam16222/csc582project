@@ -126,6 +126,14 @@
                     customClasses.push(splitTag.val);
                 }
 
+                // // LIGHTS: on/off
+                // else if( splitTag && splitTag.property == "LIGHTS" ) {
+                //     if(splitTag.val=="on")
+                //         switchTheme(false)
+                //     else    
+                //         switchTheme(true)   
+                // }
+
                 // CLEAR - removes all existing content.
                 // RESTART - clears everything and restarts the story from the beginning
                 else if( tag == "CLEAR" || tag == "RESTART" ) {
@@ -326,11 +334,17 @@
 
         // Check whether the OS/browser is configured for dark mode
         var browserDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-
         if (savedTheme === "dark"
             || (savedTheme == undefined && globalTagTheme === "dark")
             || (savedTheme == undefined && globalTagTheme == undefined && browserDark))
             document.body.classList.add("dark");
+    }
+
+    function switchTheme(setDark){
+        if(setDark)
+            document.body.classList.add("dark");
+        else
+            document.body.classList.removeAll("dark");
     }
 
     // Used to hook up the functionality for global functionality buttons
