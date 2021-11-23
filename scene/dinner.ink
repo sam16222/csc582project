@@ -11,13 +11,13 @@ You're led to the table beside the window with the most amazing view of the Manh
 You pull the chair back for your partner and they take a seat. You sit across from them.
 
     + "How was your day["]?", you asked sincerely 
-        Your partner smiles and says they didn't do much. "Just took care of some small taks"
+        Your partner smiles and says they didn't do much. "Just took care of some small errands"
         "Ah so it was a relaxing day for you then"
         (faintly) "Yeah"
         
-        ** [CALL FOR SOME SERVICE] -> call_server
+        ++ [CALL FOR SOME SERVICE] -> call_server
             
-        ** {n>1} [ASK WHAT'S WRONG] -> whats_wrong
+        ++ {n>1} [ASK WHAT'S WRONG] -> whats_wrong
         
     + "How is your sister doing? I remember she was going through a tough time at work["].".
         "I don't know... I haven't talked to her in a while."
@@ -70,12 +70,27 @@ The waiter comes along to ask you about your order. Your partner orders Pan-frie
         {negative(1)}
         -> conversation
         // Write some subsequent dialogue
-    + [HMMM...]
+    + [ASK THEM IF SOMETHING IS WRONG]
         "What happened? Why aren't you ordering your usual Risotto Alla Milanese?"
-        -> whats_wrong
+        -> whats_wrong_from_food
         // Write some subsequent dialogue
 
-        
+
+===whats_wrong_from_food===
+{positive(1)}
+You look at your partner and see that they're showing disinterest in everything. You decide to do something about it.
+
+"Hey... what's wrong? You don't seem... yourself", you ask with concern.
+
+Your partner looks at you and as soon as you make eye contact, they start tearing up.
+
+You immedietly get up from your seat and kneel down beside your partner. You put a reassuring arm around her and try to console her.
+
+"It's okay... Everything's fine."
+
+You take the napkin placed on the table and try to wipe away your partner's tears.
+   
+   + [CHANGE THE TOPIC] -> conversation 
         
 ===food_2===
 The waiter comes along to ask you about your order.
@@ -93,7 +108,7 @@ The waiter comes along to ask you about your order.
 
 ===conversation===
 +[TALK ABOUT YOUR LAST TRIP TOGETHER]
-    "Hey remember when we went to the Trosmo? I've been thinking about that quite a bit lately", you said.
+    "Hey remember when we went to the Trosmo? I've been thinking about that quite a bit lately", you say.
     {positive(1)}
     "Sitting under the stars for hours with the biting cold surrounding us. And when the Aurora Borealis started... it was so magical."
     
@@ -143,7 +158,7 @@ They don't need to say anything more.
     ->dinner_exit
 
 ===apologise===
-"So listen... I know I haven't been around lately. I've been swamped with work and just didn't took the time to spend it with you. I know I can act like I don't care but I get lost in my work. These are not excuses. I just want to say I'm sorry. I will try to work on this. That's a promise. 
+"So listen... I know I haven't been around lately. I've been swamped with work and just didn't take the time to be there for you. I know I can act like I don't care, but I just get lost in my work. These are not excuses. I just want to say I'm sorry. I will try to work on this. That's a promise. 
 -> dinner_exit
 
 ===dinner_exit===
@@ -172,7 +187,7 @@ You take a long walk, trying to think of what to do.
 .
 .
 .
-You go back home. You enter your room and see your partner crying in the bed. Her mascara has flown all the way down her cheeks.
+You go back home. You enter your room and see your partner crying in the bed. Her mascara has rolled all the way down her cheeks.
 + [GO TO SLEEP WITHOUT SAYING ANYTHING]
     {(negative(3))}
     ~angry = true
