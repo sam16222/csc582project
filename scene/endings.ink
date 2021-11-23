@@ -109,11 +109,11 @@ As the days go by, your partner gets better.
 
 While you're coming home from the hospital after their discharge, you hold their hand.
 
-"It's okay sweetheart.... I forgive you. You don't need to hold this guilt over you. You're only human. Anyone can make a mistake."
+"It's okay sweetheart... You don't need to hold this guilt over you. You're only human. Anyone can make a mistake."
 
 A few days later, when you're sure that your partner is getting the help they need and that they're mentally stronger, you sit down and have a long talk with them.
 
-"I'm sorry but I think I cannot be with you anymore. I'm saying this now because I know you won't take any drastic steps. But.... this is it...", you tell them as you see the disappointed acceptance in their eyes.
+"I'm sorry but I don't think I can be with you anymore. I sincerely wish you the best in the world. But.... this is it...", you tell them as you see the disappointed acceptance in their eyes.
 
 ->END
 

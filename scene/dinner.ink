@@ -11,7 +11,7 @@ You're led to the table beside the window with the most amazing view of the Manh
 You pull the chair back for your partner and they take a seat. You sit across from them.
 
     + "How was your day["]?", you asked sincerely 
-        Your partner smiles and says they didn't do much. "Just took care of some small taks"
+        Your partner smiles and says they didn't do much. "Just took care of some small errands"
         "Ah so it was a relaxing day for you then"
         (faintly) "Yeah"
         
@@ -93,7 +93,7 @@ The waiter comes along to ask you about your order.
 
 ===conversation===
 +[TALK ABOUT YOUR LAST TRIP TOGETHER]
-    "Hey remember when we went to the Trosmo? I've been thinking about that quite a bit lately", you said.
+    "Hey remember when we went to the Trosmo? I've been thinking about that quite a bit lately", you say.
     {positive(1)}
     "Sitting under the stars for hours with the biting cold surrounding us. And when the Aurora Borealis started... it was so magical."
     
@@ -143,7 +143,7 @@ They don't need to say anything more.
     ->dinner_exit
 
 ===apologise===
-"So listen... I know I haven't been around lately. I've been swamped with work and just didn't took the time to spend it with you. I know I can act like I don't care but I get lost in my work. These are not excuses. I just want to say I'm sorry. I will try to work on this. That's a promise. 
+"So listen... I know I haven't been around lately. I've been swamped with work and just didn't take the time to be there for you. I know I can act like I don't care, but I just get lost in my work. These are not excuses. I just want to say I'm sorry. I will try to work on this. That's a promise. 
 -> dinner_exit
 
 ===dinner_exit===
@@ -172,7 +172,7 @@ You take a long walk, trying to think of what to do.
 .
 .
 .
-You go back home. You enter your room and see your partner crying in the bed. Her mascara has flown all the way down her cheeks.
+You go back home. You enter your room and see your partner crying in the bed. Her mascara has rolled all the way down her cheeks.
 + [GO TO SLEEP WITHOUT SAYING ANYTHING]
     {(negative(3))}
     ~angry = true

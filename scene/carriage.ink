@@ -34,7 +34,7 @@ You see that your partner is admiring the carriage itself.
     -> picnic
 + (carriage_choice) "Where would you like to go?"
     {positive(1)}
-    "Umm I don't know", they said, still sinking into the surprise.
+    "Umm I don't know", they said, the surprise still setting in.
     "Pick a number then!"
         ** (one) 1
         ** (two) 2
@@ -85,7 +85,7 @@ You talk on the phone for about 20 minutes, while your partner looks out the win
 
 You head to the bethesda Fountain where you had proposed marriage to your partner. As you're recounting how nervous you were before popping the question, you see a teardrop rolling down your partner's cheeks.
 
-"Heyy! Do you think saying 'yes' wasn't the right choice that day?! Too bad, you're stuck with me now :)"
+"Hey! Do you think saying 'yes' that day was the right choice? Too bad, you're stuck with me now!", you say, grinning.
 
 You wipe the tear off their face. They smile and apologize.
 
